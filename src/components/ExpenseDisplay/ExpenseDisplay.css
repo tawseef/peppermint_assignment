@@ -1,0 +1,14 @@
+.expenses{
+    width: 100%;
+    font-weight: 500;
+    font-size: larger;
+    color: black;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+hr{
+    width: 100%;
+}
