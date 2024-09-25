@@ -1,0 +1,9 @@
+.navbarContainer{
+    background-color: grey;
+    color:white;
+    font-size:xx-large;
+    font-weight: bolder;
+    height: 50px;
+    padding-left: 20px;
+    text-align: center;
+}
