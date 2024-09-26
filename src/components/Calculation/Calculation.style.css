@@ -1,42 +1,74 @@
-.expenseSection{
-    font-size: x-large;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 20px;
-    margin-top: 20px;
+.expenseSection {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-.inputBox{
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 20px;
-    font-size: medium;
+.inputBox {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 10px;
+  padding-left: 20px;
+  font-size: medium;
 }
 
-.title{
-    font-size: 30px;
-    font-weight: bold;
+.title {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.sectionAdd{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 4px solid black;
-    background-color: rgb(235, 237, 237);
-    margin: 20px 40px 0px 40px;
-    padding: 10px;
-    border-radius: 20px;
-    box-sizing: border-box;
+.sectionAdd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid black;
+  background-color: rgb(235, 237, 237);
+  margin: 20px 40px 0px 40px;
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.display{
-    border: 4px solid black;
-    background-color: rgb(235, 237, 237);
-    margin: 20px 40px 0px 40px;
-    padding: 15px;
-    border-radius: 20px;
-    box-sizing: border-box;
+.display {
+  border: 4px solid black;
+  background-color: rgb(235, 237, 237);
+  margin: 20px 40px 0px 40px;
+  padding: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-height: 350px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.incomeBox {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  font-size: medium;
+}
+
+.incomeBtn {
+  height: 45px;
+  width: 155px;
+  background-color: orange;
+  font-size: x-large;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.wt {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 150px;
 }

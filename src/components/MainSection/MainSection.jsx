@@ -5,40 +5,41 @@ import Calculation from "../Calculation/Calculation";
 
 function MainSection() {
   const [input, setInput] = useState(null);
-  const data = useContext(DataContext)
+  const data = useContext(DataContext);
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    data.setTotal(input)
-  }
-  return (<>
-    {
-        !data.total ? 
-        
+    data.setTotal(input);
+  };
+  return (
+    <>
+      {!data.total ? (
         <div>
-      <div className="inputTotal">
-        <div name="total" className="labelTitle">
-          ENTER TOTAL EXPENSE
+          <div className="inputTotal">
+            <div name="total" className="labelTitle">
+              ENTER TOTAL EXPENSE
+            </div>
+            <div>
+              <input
+                type="number"
+                placeholder="Enter Total Expense"
+                value={data.total}
+                onChange={(e) => setInput(e.target.value)}
+                className="inputTotalBox"
+              />
+            </div>
+            <div>
+              <button className="button" onClick={(e) => handleSubmit(e)}>
+                {" "}
+                Submit{" "}
+              </button>
+            </div>
+          </div>
         </div>
-        <div>
-          <input
-            type="number"
-            placeholder="Enter Total Expense"
-            value={data.total}
-            onChange={(e) => setInput(e.target.value)}
-            className="inputTotalBox"
-          />
-        </div>
-        <div>
-          <button className="button" onClick={(e)=>handleSubmit(e)}> Submit </button>
-        </div>
-      </div>
-    </div>
-
-        : <Calculation/>
-    }
-    
-  </>
+      ) : (
+        <Calculation />
+      )}
+    </>
   );
 }
 

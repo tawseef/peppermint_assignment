@@ -1,9 +1,9 @@
-.navbarContainer{
-    background-color: rgb(81, 91, 91);
-    color:white;
-    font-size:xx-large;
-    font-weight: bolder;
-    height: 50px;
-    padding-left: 20px;
-    text-align: center;
+.navbarContainer {
+  background-color: rgb(81, 91, 91);
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  height: 50px;
+  padding-left: 20px;
+  text-align: center;
 }

@@ -1,14 +1,25 @@
-.expenses{
-    width: 100%;
-    font-weight: 500;
-    font-size: larger;
-    color: black;
+.expenses {
+  width: 100%;
+  font-weight: 500;
+  font-size: larger;
+  color: black;
+  max-height: 400px;
 }
 
-.bold{
-    font-weight: bolder;
+.bold {
+  font-weight: bolder;
 }
 
-hr{
-    width: 100%;
+hr {
+  width: 100%;
+}
+
+.mg {
+  margin-left: 300px;
+}
+
+.expenseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
